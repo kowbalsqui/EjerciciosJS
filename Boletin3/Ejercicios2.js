@@ -47,7 +47,7 @@ try{
 
 //Ejercicio 3:
 
-let texto = "En ocasiones anterior hemos compartido ejercicios de fuga de letras de palabras o de frases para trabajar, entre otros aspectos, la conciencia fonológica y la lectoescritura."
+/*let texto = "En ocasiones anterior hemos compartido ejercicios de fuga de letras de palabras o de frases para trabajar, entre otros aspectos, la conciencia fonológica y la lectoescritura."
 let empiezaConA = /^[Aa]/; //Expresión regular para verificar si la palabra empieza con A o a
 sumaPalabra = 0;
 sumaConVocal = 0;
@@ -62,4 +62,23 @@ try{
     document.write("De las cuales " + sumaConVocal + " empiezan con la letra A o a" + "<br>");
 }catch(error){
     console.error("Error al procesar el texto:", error.mesage);
+}*/
+
+//Ejercicio 4:
+
+/*let texto = "Hola esto es un (texto) de prueba sin (parentesis";
+let palabra = [];
+for(let palabraSeparada of texto.split(" ")){
+    if (palabraSeparada.includes("(") && palabraSeparada.includes(")")){
+        palabra.push(palabraSeparada);
+    }else if (palabraSeparada.includes("(")){
+        palabra.push(palabraSeparada);
+    }
 }
+document.write("Palabras que contienen paréntesis: " + palabra);*/
+
+//Ejercicio 5: 
+
+let texto = "hola que tal";
+let inversa = texto.reverse();
+document.write("Texto invertido: " + inversa);
