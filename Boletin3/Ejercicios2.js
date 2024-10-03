@@ -1,4 +1,4 @@
-//Ejercicio 1:
+//Ejercicio 1: Revisar con el exec. y array.lenght
 
 /*let nombres = prompt("Ingrese los nombres de los estudiantes, separados por comas:");
 const empiezaCExpr = /^[C]/; //Expresión regular para verificar si el nombre empieza con C
@@ -26,7 +26,7 @@ try{
     console.error("Error al procesar los nombres:", error.mesage); 
 }*/
 
-//Ejercicio 2:
+//Ejercicio 2: Revisar con el exec.
 
 /*let nombres = prompt("Ingrese los nombres de los estudiantes, separados por comas:");
 const empiezaCExpr = /^[C]/; //Expresión regular para verificar si el nombre empieza con C
@@ -45,7 +45,7 @@ try{
     console.error("Error al procesar los nombres:", error.mesage);
 }*/
 
-//Ejercicio 3:
+//Ejercicio 3: Revisar con el exec.
 
 /*let texto = "En ocasiones anterior hemos compartido ejercicios de fuga de letras de palabras o de frases para trabajar, entre otros aspectos, la conciencia fonológica y la lectoescritura."
 let empiezaConA = /^[Aa]/; //Expresión regular para verificar si la palabra empieza con A o a
@@ -79,6 +79,53 @@ document.write("Palabras que contienen paréntesis: " + palabra);*/
 
 //Ejercicio 5: 
 
-let texto = "hola que tal";
-let inversa = texto.reverse();
+/*let texto = "hola que tal";
+let inversa = ""; 
+for (let i = texto.length -1; i >= 0; i--) {
+    inversa += texto[i];
+}
 document.write("Texto invertido: " + inversa);
+
+//Forma más facil y rapida: 
+
+let texto = "hola que tal";
+let invertido = texto.reverse();
+document.write("Texto invertido: " + invertido);*/
+
+//Ejercicio 6:
+
+/*let descripcion = prompt("Ingrese separado por coma Nombre, Profesion y edad: ");
+let edad = parseInt(descripcion.split(", ")[2]);
+document.write("Usted tiene " + edad + " años"  );*/
+
+//Ejercicio 7;
+
+/*let correo = prompt("Ingrese su direccion de correo electronico: ");
+let expresionCorreo = new RegExp ('\w+@\w+\.(com|es|org)')
+while (!expresionCorreo.test(correo)){
+    document.write("La direccion de correo no es valida");
+    correo = prompt("Ingrese de nuevo la direccion de correo");
+}
+document.write("La direccion de correo es valida");*/
+
+//Ejercicio 9:
+
+/*let texto = prompt("Ingresa texto: ");
+let textoSinEspacio = texto.replace(/\s+/g, "");
+document.write(textoSinEspacio);*/
+
+//Ejercicio 10:
+
+/*let texto = prompt("Ingresa texto: ");
+let expresionEspacios = /\s\s+/g;
+texto = texto.replace(expresionEspacios, " ");
+document.write(texto);*/
+
+//Ejercicio 11:
+
+let contraseña = prompt("ingresa la contraseña: ");
+let expresionContraseña = /\w?\.?[0-9]?{8}/ ;
+while (!expresionContraseña.exec(contraseña)){
+    document.write("La contraseña no es valida, intente nuevamente");
+    contraseña = prompt("ingresa la contraseña: ");
+}
