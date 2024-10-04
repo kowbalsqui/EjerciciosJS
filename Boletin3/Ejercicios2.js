@@ -101,7 +101,7 @@ document.write("Usted tiene " + edad + " años"  );*/
 //Ejercicio 7;
 
 /*let correo = prompt("Ingrese su direccion de correo electronico: ");
-let expresionCorreo = new RegExp ('\w+@\w+\.(com|es|org)')
+let expresionCorreo = new RegExp (/[a-z\.0-9]+@w+\.(com|es|org)/);
 while (!expresionCorreo.test(correo)){
     document.write("La direccion de correo no es valida");
     correo = prompt("Ingrese de nuevo la direccion de correo");
@@ -123,9 +123,42 @@ document.write(texto);*/
 
 //Ejercicio 11:
 
-let contraseña = prompt("ingresa la contraseña: ");
+/*let contraseña = prompt("ingresa la contraseña: ");
 let expresionContraseña = /\w?\.?[0-9]?{8}/ ;
 while (!expresionContraseña.exec(contraseña)){
     document.write("La contraseña no es valida, intente nuevamente");
     contraseña = prompt("ingresa la contraseña: ");
+}*/
+
+//EJercicio 11 coregido:
+
+//let expresionContrsaeña = new RegExp (/([a-z]+[A-Z]+[0-9]+[&!?@]+){8,20}/)
+
+//Ejercicio 12 a: 
+
+/*let texto = "Todo lo malo en esta vida pasara si eres el malo de la pelicula y malo en todo el mundo";
+let remplazante = " bueno";
+let expresionMalo = /\s?malo/g;
+while (expresionMalo.exec(texto)){
+    texto = texto.replace(expresionMalo, remplazante);
 }
+document.write(texto);*/
+
+//Ejercicio 12 b:
+
+/*let texto = "Todo lo malo en esta vida pasara si eres el malo de la pelicula y malo en todo el mundo";
+let remplazante = prompt("Ingresa la palabra por la que quieres remplazar la palabra malo");
+let expresionMalo = /malo/g;
+while (expresionMalo.exec(texto)){
+    texto = texto.replace(expresionMalo, remplazante);
+}
+document.write(texto);*/
+
+//Ejercicio 13:
+
+/*let texto = <p>Las mejores ofertas en el gaming estan en www.pccomponentes.com y algunas veces estan dentro de www.amazon.es pero dificilmente encontrareis ofertas en www.mediamarkt.es.</p>
+let expresionWeb = /((www)?[a-zA-Z.])(com|es|org)+/g;
+while (expresionWeb.exec(texto)){
+    let web = expresionWeb.exec(texto)[0];
+    document.write("<a href='http://" + web + "'></a><br>");
+}*/
