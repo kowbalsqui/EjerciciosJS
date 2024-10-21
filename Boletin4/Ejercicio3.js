@@ -10,3 +10,10 @@ function numCifras(numero){
 }
 
 numCifras(numero);
+
+let numCifras = (numero) => {
+    var cifras = [...numero];
+    document.write(cifras.length)
+}
+
+numCifras(numero);
