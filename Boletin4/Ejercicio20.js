@@ -11,6 +11,17 @@ function imprimirDatos (){
     }
 }
 
+function buscarPorNombre(nombre){
+    for (var i = 0; i < guardaDatos.length; i++){
+        if (guardaDatos[i][0] === nombre){
+            document.write("Nombre: " + guardaDatos[i][0] + "<br>");
+            document.write("Apellidos: " + guardaDatos[i][1] + "<br>");
+            document.write("DNI: " + guardaDatos[i][2] + "<br>");
+            document.write("Fecha de nacimiento: " + guardaDatos[i][3] + "<br>");
+        }
+    }
+}
+
 var guardaDatos = [];
 var opc = 0;
 var datos = prompt("ingresa nombre, apellido, dni, fecha de nacimiento separado por comas: ")
