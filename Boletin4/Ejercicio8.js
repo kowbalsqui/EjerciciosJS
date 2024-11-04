@@ -2,7 +2,7 @@
 
 var palabra = prompt("Dime una palabra: ");
 
-function esPalindromo(palabra) {
+esPalindromo = (palabra) => {
     for (var i = 0; i < palabra.length / 2; i++) {
         if (palabra[i] !== palabra[palabra.length - 1 - i]) {
             alert("falso");

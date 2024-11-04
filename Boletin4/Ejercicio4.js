@@ -2,7 +2,7 @@
 
 var cantidad = prompt("Introduce una cantidad");
 var type = prompt("Introduce el tipo de medida (Mbyte, Kbyte, byte)");
-function convertBytes(cantidad, type) {
+convertBytes= (cantidad, type) => {
     switch (type) {
         case 'Mbyte':
             return cantidad * 1024 * 1024;

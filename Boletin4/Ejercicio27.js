@@ -12,3 +12,7 @@ class Persona{
         return this.apellidos === apellidos;
     }
 }
+
+var p1 = new Persona("carlos", "perea", "333z", 29);
+var p2 = new Persona("alvaro", "conde", "222c", 22);
+

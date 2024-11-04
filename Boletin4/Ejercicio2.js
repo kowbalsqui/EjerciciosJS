@@ -3,7 +3,7 @@ Deberá implementarse una función esAlfabetoEspaniol(texto) que devuelva true s
 
 var texto = prompt("introduce un texto");
  
-function esAlfabetoEspaniol(texto) {
+esAlfabetoEspaniol = (texto) => {
     var esAlfabeto = /^[a-zA-Z]/
     return esAlfabeto.test(texto);
 }

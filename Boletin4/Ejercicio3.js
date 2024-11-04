@@ -4,13 +4,6 @@ número de cifras del mismo. Utiliza el operador spread.
 
 var numero = prompt("Introduce un numero: ");
 
-function numCifras(numero){
-    cifras = [...numero];
-    document.write(cifras.length)
-}
-
-numCifras(numero);
-
 let numCifras = (numero) => {
     var cifras = [...numero];
     document.write(cifras.length)

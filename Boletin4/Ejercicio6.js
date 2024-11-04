@@ -2,7 +2,7 @@
 en la llamada. El número de argumentos de entrada es desconocido.*/
 
 var suma = 0;
-function sumaNumeros (...numeros){
+sumaNumeros = (...numeros) => {
     for (var i = 0; i <= numeros.length; i += 1){
         suma = suma + i;
     }
