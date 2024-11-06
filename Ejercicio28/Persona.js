@@ -5,7 +5,7 @@ class Persona {
         this.dni = dni; 
         this.fecha_nacimiento = fecha_nacimiento;
     }
-    imprimirPersona = () =>{
+    imprimirPersona (){
         alert((`Nombre: ${this.nombre}, Apellidos: ${this.apellidos}, DNI: ${this.dni}, fecha_nacimiento: ${this.fecha_nacimiento}`));
         } 
 }

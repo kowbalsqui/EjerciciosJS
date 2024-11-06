@@ -5,12 +5,12 @@ class Alumno extends Persona {
         this.notas = new Map ();
     }
 
-    imprimirPersona = () =>{
+    imprimirPersona (){
     super.imprimirPersona ();
     alert(`Curso: ${this.curso}, Notas: ${this.notas}`);
     }
     
-    devuelveNotaMedia = (notas) =>{
+    devuelveNotaMedia = (...notas) =>{
         let valores = notas.values();
         let suma = 0;
         let contador = 0;
@@ -55,7 +55,7 @@ class Alumno extends Persona {
     }*/
 }
 
-var alumno1 = new Alumnos("Carlos", "Perea", "222Z", "2DAW");
+var alumno1 = new Alumno("Carlos", "Perea", "222Z", "2DAW");
 alumno1.añadirNota("DWE", 8);
 alumno1.añadirNota("DIW", 9);
 alumno1.añadirNota("DAW", 7);
