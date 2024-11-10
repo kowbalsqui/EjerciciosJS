@@ -6,6 +6,6 @@ class Persona {
         this.fecha_nacimiento = fecha_nacimiento;
     }
     imprimirPersona (){
-        alert((`Nombre: ${this.nombre}, Apellidos: ${this.apellidos}, DNI: ${this.dni}, fecha_nacimiento: ${this.fecha_nacimiento}`));
+        console.log((`Nombre: ${this.nombre}, Apellidos: ${this.apellidos}, DNI: ${this.dni}, fecha_nacimiento: ${this.fecha_nacimiento}`));
         } 
 }

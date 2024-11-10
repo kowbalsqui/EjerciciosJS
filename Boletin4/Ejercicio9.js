@@ -31,4 +31,10 @@ function uneArrays (...arr){
     alert(nuevoArray);
 }
 
-uneArrays([1,2], [3],[4,5]);
+unir = (...array) =>{
+    let arrayNuevo = array.reduce((array, actual) => array.concat(actual));
+    console.log(`el array total que tiene todo es ${arrayNuevo}`)
+    return arrayNuevo;
+}
+
+unir([1,2], [3],[4,5]);
