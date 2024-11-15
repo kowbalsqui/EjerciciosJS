@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <form>
+        <h1>Formulario de registro de Usuario</h1>
+
+        <!-- Nombre y Apellidos -->
+        <label for="nombre">Nombre</label>
+        <div style="display: flex; gap: 10px;">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellidos" required>
+        </div>
+
+        <!-- Nombre de usuario -->
+        <label for="usuario">Nombre de usuario</label>
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <input type="text" id="usuario" name="usuario" placeholder="" style="flex-grow: 1;" required>
+            <span style="color: #aaa;">@gmail.com</span>
+        </div>
+
+        <!-- Contraseña y Confirmación -->
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="password2">Confirma tu contraseña</label>
+        <input type="password" id="password2" name="password2" required>
+
+        <!-- Fecha de nacimiento -->
+        <label>Fecha de nacimiento</label>
+        <div class="date-group">
+            <input type="number" id="dia" name="dia" placeholder="Día" min="1" max="31" required>
+            <select id="mes" name="mes" required>
+                <option value="">Mes</option>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+            <input type="number" id="año" name="año" placeholder="Año" min="1900" max="2023" required>
+        </div>
+
+        <!-- Género -->
+        <label for="genero">Sexo</label>
+        <select id="genero" name="genero" required>
+            <option value="Masculino">Hombre</option>
+            <option value="Femenino">Mujer</option>
+        </select>
+
+        <!-- Teléfono móvil con prefijo de país -->
+        <label for="telefono">Teléfono móvil</label>
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <select id="prefijo" name="prefijo" required>
+                <option value="+34">🇪🇸 +34</option>
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+33">🇫🇷 +33</option>
+                <option value="+49">🇩🇪 +49</option>
+                <option value="+39">🇮🇹 +39</option>
+                <option value="+52">🇲🇽 +52</option>
+                <option value="+54">🇦🇷 +54</option>
+                <option value="+55">🇧🇷 +55</option>
+                <option value="+81">🇯🇵 +81</option>
+                <option value="+86">🇨🇳 +86</option>
+                <!-- Añade más países según sea necesario -->
+            </select>
+            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required style="flex-grow: 1;">
+        </div>
+
+        <!-- Correo electrónico actual -->
+        <label for="correoActual">Tu dirección de correo electrónico actual</label>
+        <input type="email" id="correoActual" name="correoActual" required>
+
+        <!-- Botón de Enviar -->
+        <input class="button" type="button">Enviar
+    </form>
+</body>
+</html>
