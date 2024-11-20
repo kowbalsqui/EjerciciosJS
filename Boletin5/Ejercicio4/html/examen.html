@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Online</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <h1>Examen Online</h1>
+  
+  <div class="examen">
+    <form id="examenForm">
+      <!-- Pregunta 1 -->
+      <div class="pregunta" id="pregunta1">
+        <label>1. ¿Cuál es la capital de Francia?</label>
+        <div class="respuestas">
+          <input type="radio" id="res1a" name="pregunta1" value="Madrid">
+          <label for="res1a">Madrid</label><br>
+          <input type="radio" id="res1b" name="pregunta1" value="París">
+          <label for="res1b">París</label><br>
+          <input type="radio" id="res1c" name="pregunta1" value="Roma">
+          <label for="res1c">Roma</label><br>
+          <input type="radio" id="res1d" name="pregunta1" value="Berlín">
+          <label for="res1d">Berlín</label><br>
+        </div>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="pregunta" id="pregunta2">
+        <label>2. ¿Cuál es el río más largo del mundo?</label>
+        <div class="respuestas">
+          <input type="radio" id="res2a" name="pregunta2" value="Amazonas">
+          <label for="res2a">Amazonas</label><br>
+          <input type="radio" id="res2b" name="pregunta2" value="Nilo">
+          <label for="res2b">Nilo</label><br>
+          <input type="radio" id="res2c" name="pregunta2" value="Misisipi">
+          <label for="res2c">Misisipi</label><br>
+          <input type="radio" id="res2d" name="pregunta2" value="Yangtsé">
+          <label for="res2d">Yangtsé</label><br>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <div id="resultado" class="resultado" style="display: none;"></div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
