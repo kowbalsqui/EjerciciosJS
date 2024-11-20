@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../js/ejercicio2.js"></script>
+
 </head>
 <body>
-    <form>
+    <form id="miFormulario">
         <h1>Formulario de registro de Usuario</h1>
 
         <!-- Nombre y Apellidos -->
@@ -27,7 +27,7 @@
 
         <!-- Contraseña y Confirmación -->
         <label for="password">Contraseña</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required pattern="[A-Za-z0-9*$%]{5,12}">
 
         <label for="password2">Confirma tu contraseña</label>
         <input type="password" id="password2" name="password2" required>
@@ -52,6 +52,7 @@
                 <option value="diciembre">Diciembre</option>
             </select>
             <input type="number" id="año" name="año" placeholder="Año" min="1900" max="2023" required>
+            <p id = "edad"></p>
         </div>
 
         <!-- Género -->
@@ -78,7 +79,7 @@
                 <option value="+86">🇨🇳 +86</option>
                 <!-- Añade más países según sea necesario -->
             </select>
-            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required style="flex-grow: 1;">
+            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" required style="flex-grow: 1;" pattern = "[0-9]{9}">
         </div>
 
         <!-- Correo electrónico actual -->
@@ -86,7 +87,11 @@
         <input type="email" id="correoActual" name="correoActual" required>
 
         <!-- Botón de Enviar -->
-        <input class="button" type="submit">
+        <button type="submit">Enviar</button>
     </form>
+
+    <h2>Datos Registrados:</h2>
+  <div id="datosRegistrados"></div>
+  <script type="text/javascript" src="../js/ejercicio2.js"></script>
 </body>
 </html>
