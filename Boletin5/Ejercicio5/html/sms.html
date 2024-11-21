@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Envío de SMS</title>
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Archivo CSS externo -->
+</head>
+<body>
+    <div class="form-container">
+        <h1>Envío de SMS</h1>
+        <form>
+            <label for="numero">Número de Teléfono:</label>
+            <input type="text" id="numero" name="numero" placeholder="Ingrese el número" required pattern="[0-9]+">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="6" required maxlength="145"></textarea>
+            <p id="contador"></p>
+            
+            <button type="submit">Enviar SMS</button>
+        </form>
+    </div>
+    <script src="../js/sms.js"></script>
+</body>
+</html>
