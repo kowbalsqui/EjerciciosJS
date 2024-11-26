@@ -2,6 +2,13 @@ window.addEventListener("load", inicializar);
 
 function inicializar(){
         let formulario = document.getElementById("miFormulario");
+        let resett = document.getElementById("reset");
+               
+        resett.addEventListener("click", () =>{
+            if(confirm("Estas seguro que quieres reiniciar el formulario")){
+                formulario.reset();
+            }
+        });
         formulario.addEventListener("submit", (e) => {
         e.preventDefault()
         let nombre = document.getElementById('nombre').value;
@@ -10,10 +17,7 @@ function inicializar(){
         let contraseña = document.getElementById('password').value;
         let contraseñaConfirm = document.getElementById('password2').value;
         let dia = document.getElementById('dia').value;
-        let mes = document.getElementById('mes').value;
         let anio = document.getElementById('año').value;
-        let genero = document.getElementById('genero').value;
-        let prefijo = document.getElementById('prefijo').value;
         let telefono = document.getElementById('telefono').value;
 
    
@@ -31,6 +35,18 @@ function inicializar(){
             }else if(contraseñaConfirm === ""){
                 document.getElementById('textPasswd').textContent = ""; // Limpia el mensaje de error
                 document.getElementById('textPasswd2').textContent = "La confirmación de contraseña no puede ser vacía.";
-            }
+            }else if (dia === 0){
+                document.getElementById('textPasswd2').textContent = "";
+                document.getElementById('textDia').textContent = "El dia no puede ser 0 o vacio"
+            }else if (anio === 0){
+                document.getElementById('textDia').textContent = "";
+                document.getElementById('textAnio').textContent = "Escriba un año";
+            }else if (telefono === 0){
+                document.getElementById('textAnio').textContent = "";
+                document.getElementById('textTel').textContent = "Escriba su numero de telefono"
+            }else if (correoUsuario === ""){
+                document.getElementById('textTel').textContent = "";
+                document.getElementById('textCorreo').textContent = "Ingrese su usuario para continuar";
+            } 
 }); 
 }
