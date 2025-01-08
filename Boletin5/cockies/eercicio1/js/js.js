@@ -24,7 +24,7 @@ function inicializar(){
 
     function cafe (){
         const nombre = obtenerValorCookie();
-        if (nombre == ""){
+        if (nombre){
             document.getElementById('usuario').textContent = `Bienvenido de nuevo ${nombre}`
         }else{
             let nombreUser = prompt("Ingresa su nombre");
