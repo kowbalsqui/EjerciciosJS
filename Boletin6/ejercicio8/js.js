@@ -23,11 +23,11 @@ function inicializar(){
         ul2.setAttribute("class", "specs");
         for (let j = 0; j < json[i].specs.length; j++){
             const li2 = document.createElement("li");
-            const li2t = [j];
+            const li2t = json[i].specs[j];
             li2.append(li2t);
             ul2.appendChild(li2);
         }
-        
+
         p.append(pt);
         li.appendChild(img);
         li.appendChild(p);
