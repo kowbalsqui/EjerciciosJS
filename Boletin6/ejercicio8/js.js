@@ -50,6 +50,7 @@ function html(){
 function imagenes (e){
     let img = e.target;
 
+
 }
 
 function inicializar(){
