@@ -48,7 +48,29 @@ function html(){
 }
 
 function imagenes (e){
-    let img = e.target;
+        // Obtiene el elemento padre de la imagen clicada (el elemento <li>)
+        let img = e.target;
+        let parent = img.parentElement;
+    
+        // Obtiene todos los nodos hijos del elemento padre
+        let children = parent.children;
+    
+        // Recorre los nodos hijos
+        for (let i = 0; i < children.length; i++) {
+            let child = children[i];
+    
+            // Evita modificar la visibilidad de la imagen clicada
+            if (child.tagName.toLowerCase() === "img") {
+                continue;
+            }
+    
+            // Alterna el estilo display entre block y none
+            if (child.style.display === "none") {
+                child.style.display = "block";
+            } else {
+                child.style.display = "none";
+            }
+        }
 
 
 }
