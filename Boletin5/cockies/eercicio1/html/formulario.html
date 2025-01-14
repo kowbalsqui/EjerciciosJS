@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Cafés</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/js.js"></script>
+    <script defer src="../js/js.js"></script>
 </head>
 <body>
     <div class="form-container">
         <h1 id="usuario"></h1>
         <h1>Elige tu café favorito</h1>
-        <form action="#" method="post">
-            <label class="checkbox-label">
-                <input id="cafess" type="checkbox" name="cafe" value="espresso"> Espresso
+        <form id="formulario-cafe">
+            <label>
+                <input type="radio" name="cafe" value="espresso"> Espresso
             </label>
-            <label class="checkbox-label">
-                <input id="cafess" type="checkbox" name="cafe" value="cappuccino"> Cappuccino
+            <label>
+                <input type="radio" name="cafe" value="cappuccino"> Cappuccino
             </label>
-            <label class="checkbox-label">
-                <input id="cafess" type="checkbox" name="cafe" value="moka"> Moka
+            <label>
+                <input type="radio" name="cafe" value="moka"> Moka
             </label>
-            <br>
-            <a id="boton" href="formulario.html" type="submit" class="submit-btn">Enviar</a>
+            <br><br>
+            <button type="submit" class="submit-btn">Enviar</button>
         </form>
     </div>
 </body>
