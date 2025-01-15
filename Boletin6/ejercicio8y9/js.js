@@ -5,6 +5,7 @@ const json = [
     {src:"https://imgs.search.brave.com/MxD7turrp5z_tnqJ3xiLNOn7LQTfvab5CRL3a02kAU0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtYmxvZy5ob3N0/Z2F0b3IubXgvd3At/Y29udGVudC91cGxv/YWRzLzIwMjEvMDgv/MzJfSW1hZ2Vuc1dl/Yl9CTE9HX0VTUC53/ZWJw", desc: "descripcion2", specs: ["spec21", "spec22"]},
 ]
 
+
 function html(){
     const div = document.createElement("div");
     div.setAttribute("id", "todos-los-viajes");
