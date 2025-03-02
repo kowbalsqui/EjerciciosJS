@@ -1,8 +1,8 @@
 /* Creacion de las citas */
 
-let cita1 = new Cita("Odontologia", new Date(2025, 2, 1));
+let cita1 = new Cita("Odontologia", new Date(2025, 2, 4));
 let cita2 = new Cita("Pediatria", new Date(2024, 0, 1));
-let cita3 = new Cita("Traumatologia", new Date(2025, 2, 2));
+let cita3 = new Cita("Traumatologia", new Date(2025, 2, 3));
 
 cita1.imprimirCita();
 cita2.imprimirCita();
