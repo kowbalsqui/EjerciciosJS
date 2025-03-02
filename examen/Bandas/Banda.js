@@ -28,7 +28,7 @@ class Banda{
     }
 
     static ordenaPorAño = (listaBandas) =>{
-        let banda = listaBandas.slice().sort((a, b) => a.año - b.año);
+        let banda = listaBandas.sort((a, b) => a.año - b.año);
         banda.forEach(a => {
             a.mostrarBanda();
         }) 
